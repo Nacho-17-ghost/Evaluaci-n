@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>El Tigre Siberiano</h1>
+            <h2>Formulario de Contacto</h2>
+        </header>
+        <nav>
+            <a href="inicio.html">Inicio</a>
+            <a href="detalles.html">Detalles</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <h2>Formulario de contacto</h2>
+        <form action="/pagina_accion.php">
+
+            <div class="campo">
+                <label for="nombre">Nombre <span class="marca-requerido">*</span></label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Ignacio" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo<span class="marca-requerido">*</span></label>
+                <input type="email" id="correo" name="correo"
+                placeholder="Ej: ignacio@gmail.com"
+                pattern="^[a-zA-Z0-9._%+\-]+@gmail\.com$"
+                required>
+            </div>
+
+            <div class="campo">
+                <label for="fechaNacimiento">Fecha de nacimiento</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Conservación de ignacio sepulveda. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
